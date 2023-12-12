@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Weather</title>
+  <link rel="icon" href="/img/weather.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container  mx-auto text-center">
+    {{>header}}
+
+    <p class="info-para">Use this site to get your weather!</p>
+
+    <form>
+      <input placeholder="Location">
+      <button>Search</button>
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+
+    <div class="card mt-4 mx-auto" style="max-width: 650px; 
+  border: 1px solid #d579ec;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(33, 28, 28, 0.1);
+ 
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+">
+      <div class="row g-2">
+        <div class="col-md-4">
+          <img src="/img/weather_.jpeg" class="weather-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text weather-info">Welcome to Weather Hub! While we're tuning in to the latest forecast,
+              here's a friendly reminder that sunny days and stormy nights are best experienced together. Your
+              personalized weather update is just a search away!</p>
+            <p class="card-text"><small class="text-muted date-and-time"></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  {{>footer}}
+
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
