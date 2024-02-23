@@ -39,6 +39,10 @@ app.get("/about", (req, res) => {
   });
 });
 
+app.get("/api" , (req, res)=>{
+  res.send("Hello, Welcome to weather API :) ")
+})
+
 app.get("/help", (req, res) => {
   res.render("help", {
     helpText: "You can contact me on my email reclusebloke@gmail.com",
